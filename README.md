@@ -1,5 +1,14 @@
 # Brain Tumor Segmentation using an ensemble of 3D U-Nets
 
+## Table of Contents
+1. [Team Members](#team-members)
+2. [Introduction](#introduction)
+3. [Dataset](#dataset)
+4. [Model Architecture](##model-architecture)
+5. [Results](#results)
+6. [Our Contribution](#our-contribution)
+7. [References](#references)
+
 ## Team Members
 1. Sachin Salim (sachinks@umich.edu)
 2. Nowrin Mohamed (nowrin@umich.edu)
