@@ -27,3 +27,7 @@ Model | N | M | f
 Model1 | 3 | 64 | 64
 Model2 | 3 | 96 | 48
 Model3 | 4 | 96 | 24
+
+| ![space-1.jpg](https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg) |
+|:--:|
+| <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b>|
