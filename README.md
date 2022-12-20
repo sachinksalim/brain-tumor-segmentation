@@ -5,7 +5,7 @@
 2. Nowrin Mohamed (nowrin@umich.edu)
 3. Shrikant Arvavasu (ashri@umich.edu)
 
-## Abstract
+## Introduction
 Among brain tumors, gliomas are the most common and aggressive, having extreme variations in shape, size and appearance. Automatic and reliable segmentation methods are important because the large amount of data produced by MRI prevents manual segmentation in a reasonable time. In this paper we aim to develop a deep learning model using a 3D U-Net with adaptations in the preprocessing, training and testing strategies. In addition to this, we created an ensemble of multiple models trained with different hyper-parameters that are used to reduce random errors from each model and yield improved performance. Given the limited computational power, three different 3D U-Net architectures are implemented where each model performs better than the other in its own aspects. Furthermore, the ensemble provides better results.
 
 ## Dataset
@@ -15,10 +15,8 @@ The datasets used in this study are collected by signing up in synapse.org. The 
 (iii) T2-weighted (T2)
 (iv) Fluid Attenuated Inversion Recovery (FLAIR)
 
-| <img width="671" alt="segmented_slice" src="https://user-images.githubusercontent.com/23056099/208563195-5496148f-92de-4a7b-a92b-aa6e5fb0ca06.png">
- |
-|:--:|
-| <b>Ground truth segmentation overlay on a T2 weighted scan.</b>|
+<img alt="Example of tumor segmentation overlay on T2" src="images/tumor_segm.png" width='400'>  
+<sub>Ground truth segmentation overlay on a T2 weighted scan. </sub> 
 
 ## Model Architecture
 | ![model_arch](https://user-images.githubusercontent.com/23056099/208560025-5c35ef6c-6825-4242-815b-724748caea6a.png) |
