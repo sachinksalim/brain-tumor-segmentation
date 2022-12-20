@@ -15,11 +15,15 @@ The datasets used in this study are collected by signing up in synapse.org. The 
 (iii) T2-weighted (T2)
 (iv) Fluid Attenuated Inversion Recovery (FLAIR)
 
-![Dataset](https://user-images.githubusercontent.com/23056099/208559940-41fcdcf0-81e1-4336-ac86-f8cdc16f1813.png)
+
+| ![Dataset](https://user-images.githubusercontent.com/23056099/208559940-41fcdcf0-81e1-4336-ac86-f8cdc16f1813.png) |
+|:--:|
+| <b>4 modalities and segmented tumor</b>|
 
 ## Model Architecture
-3D U-Net Architecture
-![model_arch](https://user-images.githubusercontent.com/23056099/208560025-5c35ef6c-6825-4242-815b-724748caea6a.png)
+| ![model_arch](https://user-images.githubusercontent.com/23056099/208560025-5c35ef6c-6825-4242-815b-724748caea6a.png) |
+|:--:|
+| <b>3D U-Net Architecture</b>|
 
 We used three different U-Net models with hyperparameters as follows:
 Model | N | M | f
@@ -28,6 +32,15 @@ Model1 | 3 | 64 | 64
 Model2 | 3 | 96 | 48
 Model3 | 4 | 96 | 24
 
-| ![space-1.jpg](https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg) |
+## Results
+| ![results](https://user-images.githubusercontent.com/23056099/208560765-d577d4f0-20e9-41d3-9ec1-6a89c63222bb.png) |
 |:--:|
-| <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b>|
+| Segmented sub-regions from models 1-3 and the ensemble model is compared with the ground truth for case BraTS2021-00346 |
+
+Performance of the model for the whole tumor (WT) segmentation
+Model | Dice Score | Hausdorff Distance
+--- | --- | --- 
+Model1 | 0.756 | 4.56
+Model2 | 0.812 | 4.02
+Model3 | 0.804 | 4.33
+Ensemble | 0.805 | 3.84
