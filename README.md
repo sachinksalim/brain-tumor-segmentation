@@ -1,6 +1,7 @@
 # Brain Tumor Segmentation using an ensemble of 3D U-Nets
 
 Refer [here](docs/report.pdf) for the full report.
+Click [here](code/BTS_UNet.ipynb) for the source code.
 
 ## Table of Contents
 1. [Team Members](#team-members)
