@@ -1,5 +1,7 @@
 # Brain Tumor Segmentation using an ensemble of 3D U-Nets
 
+Refer to <> for the full report.
+
 ## Table of Contents
 1. [Team Members](#team-members)
 2. [Introduction](#introduction)
@@ -31,6 +33,8 @@ The datasets used in this study are collected by signing up in synapse.org. The 
 | ![model_arch](https://user-images.githubusercontent.com/23056099/208560025-5c35ef6c-6825-4242-815b-724748caea6a.png) |
 |:--:|
 | <b>3D U-Net Architecture</b>|
+
+U-Net is a widely used network structure that consists of a contracting and a symmetric expanding path that enables segmentation for the entire input image[3]. In practice, it is very challenging to achieve a single “optimized” model and thus, an ensemble of multiple models can generally improve the segmentation accuracy[4]. In this paper, we propose three different 3D U-Nets with different hyper-parameters and also an ensemble to 3D U-Nets. For each 3D U-Net, the smaller 3D patches will be extracted to minimize memory overhead and also a data reshaping is done where all four modalities of the MRI volume are concatenated together. Furthermore, during testing, a sliding window approach is used to predict class labels with overlap between patches as a testing augmentation method to improve accuracy. Even though many new methods show superior performance, a recent paper  claimed that vanilla U-Net can yield robust and superior performance[5].
 
 We used three different U-Net models with hyperparameters as follows:
 Model | N | M | f
